@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Contact form submission route
 app.post("/send-message", async (req, res) => {
-  console.log("Received Data:", req.body); 
+  console.log("Received Data:", req.body);
 
   const { name, email, subject, message } = req.body;
 
@@ -28,6 +28,11 @@ app.post("/send-message", async (req, res) => {
         pass: process.env.EMAIL_PASS,
       },
     });
+    console.log("Email User:", process.env.EMAIL_USER);
+    console.log(
+      "Email Pass:",
+      process.env.EMAIL_PASS ? "Loaded" : "Not Loaded"
+    );
 
     const mailOptions = {
       from: email,
