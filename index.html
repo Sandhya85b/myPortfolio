@@ -14,11 +14,15 @@
       </div>
       <nav>
         <ul>
+         
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+        
         </ul>
+      
+      </div>
       </nav>
     </header>
 
@@ -39,7 +43,7 @@
             </p>
             <a
               href="https://drive.google.com/file/d/1L-K9L7LNVdBlQCUbbZ4EDxG0oDklEEgG/view?usp=drive_link"
-              class="resume-btn"
+              class="resume-btn" target="_blank"
               download
             >
               Download Resume
@@ -129,7 +133,14 @@
             />
             <span>Jira</span>
           </div>
-
+              <!-- GitHub-->
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
+              alt="GitHub"
+            />
+            <span>GitHub</span>
+          </div>
           <!-- Manual Testing -->
           <div>
             <img
@@ -231,6 +242,13 @@
             alert("Failed to send message. Please try again.");
           }
         });
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
     </script>
   </body>
 </html>
