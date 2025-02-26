@@ -13,6 +13,7 @@
 
 /* Reset & General Styles */
 body {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-dark);
   color: var(--text-light);
