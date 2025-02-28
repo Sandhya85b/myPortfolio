@@ -1,254 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandhya Bonthu | Web Engineer</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhya Bonthu | Portfolio</title>
     <link rel="stylesheet" href="./portfolio.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-text">
-        <h1>Sandhya Bonthu</h1>
-        <p>Web Engineer | JavaScript | HTML | CSS | MongoDB</p>
-      </div>
-      <nav>
-        <ul>
-         
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        
-        </ul>
-      
-      </div>
-      </nav>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Sandhya Bonthu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    
+    <section id="about" class="container text-center py-5 mt-5">
+        <h2 class="fw-bold">About Me</h2>
+        <p class="lead"> Dynamic and proficient Web Engineer with expertise in HTML, CSS,
+          JavaScript, Nodejs, Expressjs, and MongoDB. I have a passion for
+          Front-end & Back-end development and am always eager to learn new
+          technologies. Skilled in problem-solving and collaboration to
+          enhance development workflows.</p>
+          <img src="https://res.cloudinary.com/dgbdcjnkw/image/upload/v1739433239/lfagxtdik6chbivc7vn2.jpg" alt="Sandhya Bonthu" class="profile-img">
 
-    <main>
-       
-      <section id="about">
-        <h2>About Me</h2>
-        <!-- FLEX CONTAINER FOR TEXT + IMAGE -->
-        <div class="about-container">
-          <!-- TEXT AREA -->
-          <div class="text-container">
-            <p>
-              Dynamic and proficient Web Engineer with expertise in HTML, CSS,
-              JavaScript, Nodejs, Expressjs, and MongoDB. I have a passion for
-              Front-end & Back-end development and am always eager to learn new
-              technologies. Skilled in problem-solving and collaboration to
-              enhance development workflows.
-            </p>
-            <a
-              href="https://drive.google.com/file/d/1WczJvhoOhglZkSKIUsa0MiiND3rAVFiT/view?usp=sharing"
-              class="resume-btn" target="_blank"
-              download
-            >
-              Download Resume
+    </section>
+    
+    <section id="skills" class="bg-light py-5">
+      <div class="container text-center">
+          <h2 class="fw-bold">Technical Skills</h2>
+          <div class="skills-grid mt-4">
+              <div class="skill">
+                  <img src="https://cdn-icons-png.flaticon.com/64/5968/5968292.png" alt="JavaScript">
+                  <span>JavaScript</span>
+              </div>
+              <div class="skill">
+                  <img src="https://cdn-icons-png.flaticon.com/64/174/174854.png" alt="HTML">
+                  <span>HTML</span>
+              </div>
+              <div class="skill">
+                  <img src="https://cdn-icons-png.flaticon.com/64/732/732190.png" alt="CSS">
+                  <span>CSS</span>
+              </div>
+              <div class="skill">
+                  <img src="https://cdn-icons-png.flaticon.com/64/919/919825.png" alt="Node.js">
+                  <span>Node.js</span>
+              </div>
+              <div class="skill">
+                  <img src="https://miro.medium.com/v2/resize:fit:150/format:webp/1*i2fRBk3GsYLeUk_Rh7AzHw.png" alt="Express.js">
+                  <span>Express.js</span>
+              </div>
+              <div class="skill">
+                  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                  <span>MongoDB</span>
+              </div>
+              <div class="skill">
+                  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240705111909/Agile-model-of-Project-Management.webp" alt="Agile">
+                  <span>Agile</span>
+              </div>
+              <div class="skill">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg" alt="Jira">
+                  <span>Jira</span>
+              </div>
+              <div class="skill">
+                  <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub">
+                  <span>GitHub</span>
+              </div>
+              <div class="skill">
+                  <img src="https://cdn-icons-png.flaticon.com/128/3281/3281329.png" alt="Manual Testing">
+                  <span>Manual Testing</span>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    
+  <section id="projects" class="container py-5 text-center">
+    <h2 class="fw-bold">Projects</h2>
+    <div class="row mt-4">
+        <div class="col-md-6 mx-auto">
+            <div class="card shadow-sm">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://lh3.googleusercontent.com/d/1pGrMT_TM2v8VUVKa0iLOLCY2eR9hxGA0" class="d-block w-100" alt="Project Screenshot 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://lh3.googleusercontent.com/d/1k0WH39B4rKF23I58de1CbfYIb8FjjqU3" class="d-block w-100" alt="Project Screenshot 2">
+                    </div>
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">GlowZoneCare</h5>
+                  <p class="card-text">
+                      <a href="https://sandhya85b.github.io/Project-Masai/" target="_blank" rel="noopener noreferrer">
+                          Visit Project
+                      </a>
+                  </p>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="contact" class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold">Contact Me</h2>
+        <p class="lead">Email: sandhya@example.com</p>
+    
+        <p class="lead">
+            <a href="https://www.linkedin.com/in/sandhya-b-856776285/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
             </a>
-          </div>
-
-          <!-- PROFILE PICTURE AREA -->
-          <div class="profile-container" >
-            <!-- <img src="https://drive.google.com/file/d/11U37dwAV4BQT13a4LivMYUMdN5ob6OKW/view?usp=drive_link
-            " alt="Sandhya Bonthu" class="profile-pic"> -->
-
-           
-            <!-- <img src="https://drive.google.com/uc?export=view&id=11U37dwAV4BQT13a4LivMYUMdN5ob6OKW
-            " alt="Sandhya Bonthu" class="profile-pic"> -->
-
-            <img src="https://res.cloudinary.com/dgbdcjnkw/image/upload/v1739433239/lfagxtdik6chbivc7vn2.jpg
-            " alt="Sandhya Bonthu" class="profile-pic">
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div>
-            <img
-              src="https://cdn-icons-png.flaticon.com/64/5968/5968292.png"
-              alt="JavaScript"
-            />
-            <span>JavaScript</span>
-          </div>
-
-          <div>
-            <img
-              src="https://cdn-icons-png.flaticon.com/64/174/174854.png"
-              alt="HTML"
-            />
-            <span>HTML</span>
-          </div>
-
-          <div>
-            <img
-              src="https://cdn-icons-png.flaticon.com/64/732/732190.png"
-              alt="CSS"
-            />
-            <span>CSS</span>
-          </div>
-
-          <div>
-            <img
-              src="https://cdn-icons-png.flaticon.com/64/919/919825.png"
-              alt="Node.js"
-            />
-            <span>Node.js</span>
-          </div>
-
-          <div>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:150/format:webp/1*i2fRBk3GsYLeUk_Rh7AzHw.png"
-              alt="Express.js"
-              style="width: 30%; height: auto"
-            />
-            <span>Express.js</span>
-          </div>
-
-          <div>
-            <img
-              src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-              alt="MongoDB"
-            />
-            <span>MongoDB</span>
-          </div>
-          <div>
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240705111909/Agile-model-of-Project-Management.webp"
-              alt="Agile"
-              style="width: 30%; height: auto"
-            />
-            <span>Agile</span>
-          </div>
-
-          <!-- Jira -->
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg"
-              alt="Jira"
-            />
-            <span>Jira</span>
-          </div>
-              <!-- GitHub-->
-          <div>
-            <img
-              src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
-              alt="GitHub"
-            />
-            <span>GitHub</span>
-          </div>
-          <!-- Manual Testing -->
-          <div>
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/3281/3281329.png"
-              alt="Manual Testing"
-              style="width: 30%; height: auto"
-            />
-            <span>Manual Testing</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>GlowZone - Cosmetic Delivery App</h3>
-          <p>
-            Developed a fully responsive cosmetic delivery web application with
-            seamless navigation and user authentication.
-          </p>
-          <p>
-            <a
-              href="https://sandhya85b.github.io/Project-Masai/"
-              target="_blank"
-              >Live Demo</a
-            >
-            |
-            <a
-              href="https://github.com/Sandhya85b/projectSubmission"
-              target="_blank"
-              >GitHub Repo</a
-            >
-          </p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="tel:+91949-148-3625">📞 9491483625</a></p>
-        <p>
-          <a href="mailto:sandhya85.b@gmail.com">📩 sandhya85.b@gmail.com</a>
+            <a href="https://github.com/Sandhya85b" target="_blank" class="ms-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="40" height="40">
+            </a>
         </p>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/sandhya-b-856776285"
-            target="_blank"
-            >LinkedIn</a
-          >
-          |
-          <a href="https://github.com/Sandhya85b" target="_blank">GitHub</a>
-        </p>
-        <form id="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+    </div>
+    
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required />
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
 
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    
+</body>
+<script> 
+  document.getElementById("contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-    <footer>
-      <p>&copy; 2025 Sandhya Bonthu</p>
-    </footer>
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    };
 
-    <script>
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", async function (event) {
-          event.preventDefault();
+    try {
+      const response = await fetch("http://localhost:8080/send-message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
 
-          const formData = {
-            name: document.getElementById("name").value.trim(),
-            email: document.getElementById("email").value.trim(),
-            subject: document.getElementById("subject").value.trim(),
-            message: document.getElementById("message").value.trim(),
-          };
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+      console.error("Error:", error);
+    }
+  });
+</script>
+</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="portfolio.js"></script>
 
-          try {
-            const response = await fetch("http://localhost:8080/send-message", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData),
-            });
-
-            const result = await response.json();
-            alert(result.message);
-          } catch (error) {
-            alert("Failed to send message. Please try again.");
-          }
-        });
-        const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("nav ul");
-
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
-    </script>
-  </body>
 </html>
