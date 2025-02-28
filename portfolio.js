@@ -20,7 +20,7 @@ app.post("/send-message", async (req, res) => {
   }
 
   try {
-    // ✅ Fix: Use SMTP instead of service
+    //  Fix: Use SMTP instead of service
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
@@ -38,7 +38,7 @@ app.post("/send-message", async (req, res) => {
     );
 
     const mailOptions = {
-      from: `"${name}" <${email}>`, // ✅ Shows sender's name
+      from: `"${name}" <${email}>`, //  Shows sender's name
       to: process.env.EMAIL_USER,
       subject: `New Contact Message: ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
